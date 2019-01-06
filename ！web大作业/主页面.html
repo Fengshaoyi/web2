@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页面</title>
+    
+    <script src="lunbo.js"></script>
+</head><link rel="stylesheet" href="img/主页面.css">
+<script>
+// 搜索栏事件
+    window.onload = function(){
+        var cover = document.getElementsByClassName('header')[0];
+        window.onscroll = function(){
+            var st = document.documentElement.scrollTop || document.body.scrollTop;
+            if(st>180){
+                cover.style.position = 'fixed'
+            }else{
+                cover.style.position = 'static'
+            }
+        }
+    }
+</script>
+<body>
+    <!-- header开始 -->
+    <div class="header" id="window" style="position: fixed;">
+        <div class="all">
+        <div class="h-top">
+        <p>帮5买，享帮帮</p> 
+            <div class="h-topr">
+                <img src="img/head.jpg" alt="">
+                <span>登录</span>
+                <span>注册</span>
+                <span><img src="img/gouwuche.jpg" alt="">消息</span>
+                <span><img src="img/dingdan.jpg" alt="">我的订单</span>
+                <span>我的收藏</span>
+                <span>帮钻兑换</span>
+                <span><img src="img/tp-my-phone.png" alt="">手机版</span>
+                <span>帮5淘</span>
+                <span>客户服务</span>
+                <span><img src="img/gouwuche.jpg" alt="">购物车</span>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="img/logo_03.jpg" alt="">
+        </div>
+        <div class="iinput">
+            <input type="text" value="输入商品网址或关键词，直通全网，快速帮5购！" class="input">
+            <button class="but">搜全网</button>
+        </div>
+        <div class="set">
+            <div class="kuang">
+                <img src="img/ear.jpg" alt="" style="padding-left: 35px">
+                <p>400-085-0505</p>
+            </div>
+            <div class="kuang">
+                <img src="img/xinfeng.jpg" alt="" style="padding-left: 35px">
+                <p>mc@b5m.com</p>
+            </div>
+            <button class="kuang2">
+                <img src="img/wenhao.jpg" alt="">
+                常见问题
+            </button>
+        </div>
+        <!-- 横栏 -->
+        <div class="lan">
+        <ul>
+            <li style="color: #ff0000;">
+                <div class="k">洗发护发</div> 
+                <img src="img/gang.jpg" alt="">
+            </li>
+            <li style="color: #ff0000;">
+                <div class="k">日本纸尿裤</div>
+                <img src="img/gang.jpg" alt="">
+            </li>
+            <li>
+                <div class="k">身体乳</div>
+                <img src="img/gang.jpg" alt="">
+            </li>
+            <li>
+                <div class="k">内衣文胸</div>
+                <img src="img/gang.jpg" alt="">
+             </li>
+            <li style="color: #b5a9d3;">
+                <div class="k">iPhone 6s</div>
+                <img src="img/gang.jpg" alt="">
+            </li>
+            <li style="color: #b5a9d3;">
+                <div class="k">iPad Air2</div> 
+                <img src="img/gang.jpg" alt="">
+            </li>
+            <li>
+                <div class="k">牛仔裤</div> 
+                <img src="img/gang.jpg" alt="">
+            </li>
+            <li>
+                <div class="k">奶粉</div> 
+                <img src="img/gang.jpg" alt="">
+            </li>
+            <li>
+                <div class="k">防晒霜</div> 
+                <img src="img/gang.jpg" alt="">
+            </li>
+            <li>
+                <div class="k">伞</div>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </div>
+    
+    <!-- header结束 -->
+<div class="main">
+    <div class="all">
+        <div class="ffind">
+        <ul class="find">
+            <li class="first"><a href="" style="color: #fff;">全部商品分类</a></li>
+            <li><a href="">帮5赚</a></li>
+            <li><a href="">帮韩品</a></li>
+            <li><a href="">超划算</a></li>
+            <li><a href="">品牌货栈</a></li>
+            <li><a href="">韩国馆</a></li>
+            <li><a href="">帮社区</a></li>
+            <li><a href="">1元兑奖<img src="img/hot.gif" alt=""></a></li>
+        </ul>
+        </div>
+        <div class="zuobian">
+            <table class="ttable">
+                <tr>
+                    <th rowspan="13">当前搜索电商 全网</th>
+                    <td style="padding-left: 13px;">手机</td>
+                    <td>数码</td>
+                    <td>影音</td>
+                    <td>配件</td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 13px;">电脑</td>
+                    <td>网络</td>
+                    <td>办公</td>
+                    <td>打印</td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 13px;">家电</td>
+                    <td>厨卫</td>
+                    <td>生活</td>
+                    <td>个户</td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 13px;">园艺</td>
+                    <td>家具</td>
+                    <td>家纺</td>
+                    <td>家饰</td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 13px;">彩妆</td>
+                    <td>面部</td>
+                    <td>身体</td>
+                    <td>香水</td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 13px;">男装</td>
+                    <td>女装</td>
+                    <td>内衣</td>
+                    <td>其他</td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 13px;">女包</td>
+                    <td>男包</td>
+                    <td>女鞋</td>
+                    <td>男鞋</td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 13px;">运动</td>
+                    <td>户外</td>
+                    <td>装备</td>
+                    <td>服饰</td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 13px;">儿童</td>
+
+                    <td><a href="http://www.yangzhidao.com/news/" style="color: black;">婴儿</a></td>
+                    <td>食品</td>
+                    <td>玩具</td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 13px;">乐器</td>
+                    <td>家宠</td>
+                    <td>收藏</td>
+                    <td>鲜花</td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 13px;">保健</td>
+                    <td>理疗</td>
+                    <td>药品</td>
+                    <td>眼镜</td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 13px;">果蔬</td>
+                    <td>礼品</td>
+                    <td>粮油</td>
+                    <td>特产</td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 13px;">文艺</td>
+                    <td>生活</td>
+                    <td>科技</td>
+                    <td>教育</td>
+                </tr>
+            </table>
+            <div class="wenti">
+            <ul>
+                <li><img src="img/dd_03.jpg" alt=""><span>什么是帮5购</span></li>
+                <li><img src="img/dd_06.jpg" alt=""><span>帮5购提供什么服务</span></li>
+                <li><img src="img/dd_08.jpg" alt=""><span>如何开通帮5购服务</span></li>
+            </ul>
+            </div>       
+        </div>
+        <!-- 轮播图开始 -->
+        <div class="lunbo">
+            <div class="box" id="box">
+                <div class="slider" id="slider">
+                    <div class="slide"><img src="img/bann1.jpeg" alt=""></div>
+                    <div class="slide"><img src="img/bann2.jpeg" alt=""></div>
+                    <div class="slide"><img src="img/bann3.jpeg" alt=""></div>
+                    <div class="slide"><img src="img/bann4.jpeg" alt=""></div>
+                    <div class="slide"><img src="img/bann5.jpeg" alt=""></div>
+                    <div class="slide"><img src="img/bann6.png" alt=""></div>
+                    <div class="slide"><img src="img/bann1.jpeg" alt=""></div>
+                </div>
+                <span id="left">&lt;</span>
+                <span id="right">&gt;</span>
+                <ul class="nav" id="nav">
+                    <li class="active"><div class="num">1</div></li>
+                    <li><div class="num">2</div></li>
+                    <li><div class="num">3</div></li>
+                    <li><div class="num">4</div></li>
+                    <li><div class="num">5</div></li>
+                    <li><div class="num">6</div></li>
+                </ul>
+            </div>
+
+            <div>
+            <img src="img/1(1).jpg" alt=""><img src="img/2.jpg" alt=""><img src="img/3(1).png" alt=""><a href=""><img src="img/qqq.png" alt=""></a>
+            </div>
+        </div>
+        <!-- 轮播图结束 -->
+        <div class="kuaixun">
+            <div class="tou">
+                <img src="img/ico-notice.png" alt="" class="notice">
+                <span>帮帮快讯</span>
+                <img src="img/jiantou.jpg" alt="" class="jiantou">
+            </div>
+            <div class="movve">
+            <ul class="move" id="ul" style="left:0;">
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整1</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整2</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整3</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整4</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整5</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整6</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整7</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整8</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整9</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整10</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整11</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整12</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整13</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整1</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整2</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整3</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整4</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整5</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整6</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整7</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整8</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整9</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整10</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整11</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整12</a>
+                </li>
+                <li>
+                    <a href="">[公告] &nbsp;&nbsp;帮购及VIP服务调整13</a>
+                </li>
+            </ul>
+            </div>
+            <div class="pay">
+                <div class="phone"><img src="img/phone.jpg" alt=""></div>
+                <p class="cz">话费充值<span>(可使用超级帮钻)</span></p>
+                <input type="text" value="请输入手机号">
+                <select id="select" style="float: left;">
+                    <option value ="1" id="10">10</option>
+                    <option value ="1" id="30">30</option>
+                    <option value ="1" id="50">50</option>
+                </select>
+                <p id="addr-show" style="width: 20px;height: 20px;font-size: 13px;float: left;padding-top: 5px;padding-left: 2px;color: #ff4d04"></p>
+                <button>充值</button>
+            </div>
+        </div>
+        <div style="float: left;">
+            <img src="img/loginB.jpg" alt="">   
+        </div>
+        <div class="danzi">
+            <ul style="padding-left:84px;">
+                <li style="color: black;font-size: 16px;">购物指南</li>
+                <li><a href="">如何下单</a></li>
+                <li><a href="">帮5购流程</a></li>
+                <li><a href="">订单查询</a></li>
+                <li><a href="">物流配送</a></li>
+            </ul>
+            <ul>
+                <li style="color: black;font-size: 16px;">支付相关</li>
+                <li><a href="">支付方式</a></li>
+                <li><a href="">安全设置</a></li>
+                <li><a href="">账户信息</a></li>
+            </ul>
+            <ul>
+                <li style="color: black;font-size: 16px;">售后服务</li>
+                <li><a href="">取消订单</a></li>
+                <li><a href="">申请售后</a></li>
+                <li><a href="">退货流程</a></li>
+                <li><a href="">退款相关</a></li>
+            </ul>
+            <ul>
+                <li style="color: black;font-size: 16px;">VIP服务</li>
+                <li><a href="">VIP优惠</a></li>
+                <li><a href="">如何成为VIP</a></li>
+                <li><a href="">超级帮钻</a></li>
+            </ul>
+            <ul>
+                <li style="color: black;font-size: 16px;">帮韩品</li>
+                <li><a href="">韩国正品</a></li>
+                <li><a href="">闪电发货</a></li>
+                <li><a href="">帮韩品售后</a></li>
+            </ul>
+            <ul>
+                <li style="color: black;font-size: 16px;">更多</li>
+                <li><a href="">手机APP</a></li>
+                <li><a href="">帮5采APP</a></li>
+                <li><a href="">帮5淘插件</a></li>
+                <li><a href="">其他</a></li>
+            </ul>
+            <img src="img/erweima.jpg" alt="" style="padding-top: 25px;">
+        </div>
+        <ul class="bottom">
+            <li>
+                <div class="zzz">
+                <a href="">
+                关于帮5买</a>
+                </div>
+                <img src="img/gang.jpg" alt="">
+            </li>
+            <li>
+                <div class="zzz">
+                <a href="">
+                联系我们</a>
+                </div>
+                <img src="img/gang.jpg" alt="">
+            </li>
+            <li>
+                <div class="zzz">
+                <a href="">
+                合作商家</a>
+                </div>
+                <img src="img/gang.jpg" alt="">
+            </li>
+            <li>
+                <div class="zzz">
+                <a href="">
+                友情链接</a>
+                </div>
+                <img src="img/gang.jpg" alt="">
+            </li>
+            <li>
+                <div class="zzz">
+                <a href="">
+                加入我们</a>
+                </div>
+                <img src="img/gang.jpg" alt="">
+            </li>
+            <li>
+                <div class="zzz">
+                <a href="">
+                移动应用</a>
+                </div>
+                <img src="img/gang.jpg" alt="">
+            </li>
+            <li>
+                <div class="zzz">
+                <a href="">
+                热门</a>
+                </div>
+                <img src="img/gang.jpg" alt="">
+            </li>
+             <li>
+                <div class="zzz">
+                <a href="">
+                广告联盟</a>
+                </div>
+                <img src="img/gang.jpg" alt="">
+            </li>
+            <li>
+                <div class="zzz">
+                <a href="">
+                使用条款</a>
+                </div>
+            </li>
+        </ul>
+        <div class="end">
+            <p>Copyright © 2011-2015 B5M.COM. All rights reserved. Powered by B5MMsoft Co.,Ltd. </p>
+            <p>增值电信业务经营许可证：沪B2-20130065号 | 中华人民共和国互联网药品信息服务资格证书（沪） -非经营性-2013-0034 沪卫（中医）网审【2015】 10032号 沪ICP备11034776号-3 | 食品流通许可证：</p>
+            <p>SP3101151410301755</p>
+        </div>
+        <div class="eeend">
+            <img src="img/bo1.gif" alt="">
+            <img src="img/bo2.png" alt="">
+            <img src="img/bo3.gif" alt="">
+            <img src="img/bo4.png" alt="">
+            <img src="img/bo5.png" alt="">
+            <img src="img/bo6.png" alt="">
+            <img src="img/bo7.png" alt="">
+        </div>
+    </div>
+    <div>
+        <img src="img/-1.png" alt="">
+    </div>
+</div>
+</body>
+    <script>
+        var box = document.getElementById('box');
+        var slider = document.getElementById('slider');
+        var left = document.getElementById('left');
+        var right = document.getElementById('right');
+        var oNavlist = document.getElementById('nav').children;
+        var index = 1; //打开页面生效的图片的下标为1
+        var timer;
+        var isMoving = false;
+        box.onmouseover = function () {
+            animate(left, {
+                opacity: 0.6
+            })
+            animate(right, {
+                opacity: 0.6
+            })
+            clearInterval(timer); //图片停止滚动
+        }
+        box.onmouseout = function () {
+            animate(left, {
+                opacity: 0
+            })
+            animate(right, {
+                opacity: 0
+            })
+            timer = setInterval(next, 3000); //图片开始接着滚动
+        }
+        right.onclick = next;
+        left.onclick = prev;
+
+        function next() {
+            if (isMoving) {
+                return;
+            }
+            isMoving = true;
+            index++;
+            navmove();
+            animate(slider, {
+                left: -801 * index
+            }, function () {
+                if (index == 7) {
+                    slider.style.left = '-801px';
+                    index = 1;
+                }
+                isMoving = false;
+            });
+        }
+
+        function prev() {
+            if (isMoving) {
+                return;
+            }
+            isMoving = true;
+            index--;
+            navmove();
+            animate(slider, {
+                left: -801 * index
+            }, function () {
+                if (index == 0) {
+                    slider.style.left = '-5607px';
+                    index = 6;
+                }
+                isMoving = false;
+            });
+        }
+        //按钮点击切换事件
+        for (var i = 0; i < oNavlist.length; i++) {
+            oNavlist[i].index = i;
+            oNavlist[i].onclick = function () {
+                index = this.index + 1;
+                navmove();
+                animate(slider, {
+                    left: -801 * index
+                });
+            }
+
+        }
+        //图片切换时按钮样式跟着切换
+        function navmove() {
+            for (var i = 0; i < oNavlist.length; i++) {
+                oNavlist[i].className = "";
+            }
+            if (index > 6) {
+                oNavlist[0].className = "active";
+            } else if (index <= 0) {
+                oNavlist[5].className = "active";
+            } else {
+                oNavlist[index - 1].className = "active";
+            }
+        }
+        //页面打开时自动滚动切换
+        timer = setInterval(next, 3000);
+
+// 公告轮播开始
+var ul = document.getElementById("ul");
+        console.log(ul.getBoundingClientRect())
+        console.log(ul.offsetHeight)
+        console.log(ul.offsetWidth)
+        console.log(ul.offsetLeft)
+        console.log(ul.offsetTop)
+
+        function show() {
+            var top = ul.offsetTop - 1; //获取left值
+            ul.style.top = top + "px"; //设置left值
+
+            //走完一半再返回
+            if (-1 * ul.offsetTop >= ul.offsetHeight ) {
+                ul.style.top = 0;
+            }
+        }
+        var t = setInterval(show, 20);
+
+        //li添加鼠标移入移出事件
+        var li = document.getElementsByTagName("li");
+        for (var i = 0; i < li.length; i++) {
+            //移出事件
+            li[i].onmouseout = function () {
+                //不能加 var
+                t = setInterval(show, 20);
+
+            };
+            //移入事件
+            li[i].onmouseover = function () {
+                clearInterval(t);
+            };
+        }
+// 公告轮播结束
+    function $(str) {
+            return document.getElementById(str);
+        }
+        var select = $('select');
+        var addrShow = $('addr-show');
+        var options = select.options;
+        var index = select.selectedIndex;
+        select.options[index].text;
+    select.onclick=function() {
+        for(i=0;i<options.length;i++) {
+           if(options[i].selected==true) {
+            var text = options[i].innerHTML;
+　　　　　　}
+　　　　}
+            addrShow.innerHTML = '￥'+text;
+        }
+    </script>
+</html>
