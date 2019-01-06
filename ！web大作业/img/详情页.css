@@ -165,8 +165,8 @@ a{
 }
 .big{
 	float: left;
-	width: 816px;
-    height: 816px;
+	width: 408px;
+    height: 408px;
     position: relative;
 }
 .img1{
@@ -176,17 +176,18 @@ a{
     margin-top: 22px;
 	margin-left: 22px;
 	border:1px solid #d0cdc7;
-	position: relative;
 }
 .img2{
+	float: left;
 	position: absolute;
-    right: -24px;
-    top: 22px;
+    left: 430px;
+    top: 23px;
     display: none;
     width: 408px;
     height: 408px;
     overflow: hidden;
     outline: 1px solid #d0cdc7;
+    z-index: 5;
 }
 .slider{
 	width: 100px;
@@ -206,6 +207,14 @@ a{
     left: 0;
     top: 0;
 }
+.v{
+	width: 410px;
+	height: 66px;
+	float: left;
+	margin-left: 22px;
+	margin-top: 26px;
+}
+
 .right{
 	width: 540px;
 	height: 609px;
